@@ -3,6 +3,8 @@ package hu.nive.ujratervezes.oopcollection.army;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class Army {
 
     List<MilitaryUnit> army = new ArrayList<>();
@@ -24,4 +26,5 @@ public class Army {
     public int getArmySize() {
         return this.army.size();
     }
+
 }

@@ -8,7 +8,6 @@ public abstract class MilitaryUnit {
     int attackPoints;
     boolean hasArmor;
 
-
     public MilitaryUnit(int healthPoints, int attackPoints, boolean hasArmor) {
         this.healthPoints = healthPoints;
         this.attackPoints = attackPoints;
@@ -31,11 +30,11 @@ public abstract class MilitaryUnit {
     }
 
     public int getHealth() {
-        return healthPoints;
+        return this.healthPoints;
     }
 
     public int getHitPoints() {
-        return attackPoints;
+        return this.attackPoints;
     }
 
 }

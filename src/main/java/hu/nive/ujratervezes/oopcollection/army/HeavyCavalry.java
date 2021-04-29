@@ -19,4 +19,15 @@ public class HeavyCavalry extends MilitaryUnit {
             return this.attackPoints;
         }
     }
+
+    @Override
+    public int getHitPoints() {
+        if (isFirstHit) {
+            this.isFirstHit = false;
+            return this.attackPoints * 3;
+        } else {
+            return this.attackPoints;
+        }
+    }
+
 }
